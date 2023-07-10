@@ -1,2 +1,11 @@
-<h1>Hello World!</h1>
-loggggggin done
+<h1>Listado de personas</h1>
+
+{% for persona in personas %}
+
+    {% if persona.edad > 0 %}
+    
+        {{persona.edad}}
+
+    {% endif %}
+
+{% endfor %}

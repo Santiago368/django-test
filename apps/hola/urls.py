@@ -1,10 +1,11 @@
 from django.urls import path
 
-from .views import hola_mundo
+from .views import hola_mundo, HolaMundo
 # from apps.hola.views import hola_mundo
 # from apps.hola import views
 
 
 urlpatterns = [
-    path('hola', hola_mundo),
+    path('hola1', hola_mundo),
+    path('hola2', HolaMundo.as_view()),
 ]
