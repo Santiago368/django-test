@@ -1,3 +1,8 @@
+import re 
+
 from django.contrib import admin
 
-# Register your models here.
+from apps.hola import models
+
+
+admin.site.register(models.Persona)
